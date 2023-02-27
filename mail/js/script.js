@@ -25,6 +25,28 @@ al click del bottone:
 
 
 
+// bottone
+
+let button = document.getElementById("login_button");
+
+let accounts = [
+"mariobianchi@gmail.com", 
+"marcorossi@gmail.com", 
+"saraverdi@gmail.com", 
+"elenagialli@gmail.com",
+"lisaviola@gmail.com",
+"matteoblu@gmail.com"
+]
+
+// test array accounts
+
+console.log(accounts);
+
+
+
+
+
+
 
 
 
