@@ -73,7 +73,21 @@ button.addEventListener("click", function(){
         }
 
     }
-   
+
+    if (userAccess == true){
+
+
+        document.getElementById("login").innerHTML = "Benvenuto!";
+
+
+    } else {
+
+        document.getElementById("denied").innerHTML = "Mi spiace, prova con un'altra mail.."
+
+
+    }
+
+
 
 
 })
