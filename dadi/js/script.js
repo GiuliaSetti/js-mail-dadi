@@ -35,6 +35,22 @@ button.addEventListener("click", function(){
     console.log(computerShot);
 
 
+    if(userShot > computerShot){
+
+        console.log("Hai vinto!");
+
+
+    } else if (userShot < computerShot){
+
+        console.log("Hai perso");
+
+    } else {
+
+        console.log("Pareggio!");
+
+    }
+
+
 })
 
 
