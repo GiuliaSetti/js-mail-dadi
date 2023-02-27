@@ -29,6 +29,8 @@ al click del bottone:
 
 let button = document.getElementById("login_button");
 
+
+// lista accounts
 let accounts = [
 "mariobianchi@gmail.com", 
 "marcorossi@gmail.com", 
@@ -41,6 +43,40 @@ let accounts = [
 // test array accounts
 
 console.log(accounts);
+
+// al click del bottone
+button.addEventListener("click", function(){
+
+    
+    let user = document.getElementById("user_mail").value;
+
+
+    // test email
+    console.log(user);
+
+    // variabile per conferma
+    let userAccess = false;
+
+
+    // ciclo
+    for(let i = 0; i < accounts.length; i ++){
+
+
+        if (user == accounts[i]){
+
+            userAccess = true;
+
+            // test
+
+            console.log("Benevenuto");
+
+        }
+
+    }
+   
+
+
+})
 
 
 
