@@ -19,6 +19,27 @@
 */
 
 
+let button = document.getElementById("play_button");
+
+
+button.addEventListener("click", function(){
+
+    let userShot = Math.floor((Math.random() * 6) + 1);
+
+    // test
+    console.log(userShot);
+
+    let computerShot = Math.floor((Math.random() * 6) + 1);
+
+    // test
+    console.log(computerShot);
+
+
+})
+
+
+
+
 
 
 
