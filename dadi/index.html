@@ -4,13 +4,52 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600;700&display=swap" rel="stylesheet">
+
+    <!-- css -->
+    
+    <link rel="stylesheet" href="css/style.css">
     <title>Gioco dei Dadi</title>
 </head>
-<body>
+<body class="debug">
 
     <div class="dadi_container">
 
+        <h1>Gioco dei dadi!</h1>
+
         <button id="play_button">Gioca</button>
+
+
+        <div class="shots_container">
+
+            <div class="points">
+
+                <div class="your_shot">
+                   <h3>Your Shot!</h3> 
+                   <div class="showed_points" id="your_shot_result"></div>
+                  
+                </div>
+                <div class="computer_shot">
+                   <h3>CPU Shot!</h3> 
+                   <div class="showed_points" id="cpu_shot_result"></div>
+                   
+                </div>
+
+
+            </div>
+
+
+               
+        <div id="result"></div>
+
+        </div>
+     
+
+
         
 
     </div>

@@ -34,19 +34,32 @@ button.addEventListener("click", function(){
     // test
     console.log(computerShot);
 
+    document.getElementById("your_shot_result").innerHTML = userShot;
+
+    
+    document.getElementById("cpu_shot_result").innerHTML = computerShot;
+
 
     if(userShot > computerShot){
 
         console.log("Hai vinto!");
+
+        document.getElementById("result").innerHTML = "Hai vinto!"
 
 
     } else if (userShot < computerShot){
 
         console.log("Hai perso");
 
+        
+        document.getElementById("result").innerHTML = "Hai perso! Riprova!"
+
     } else {
 
         console.log("Pareggio!");
+
+          
+        document.getElementById("result").innerHTML = "Pareggio!"
 
     }
 

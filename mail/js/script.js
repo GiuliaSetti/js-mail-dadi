@@ -80,13 +80,24 @@ button.addEventListener("click", function(){
         document.getElementById("login").innerHTML = "Benvenuto!";
 
 
+    } else if (user == ""){
+
+
+
+        document.getElementById("insert").innerHTML = "Inserisci una mail!";
+
+
+
     } else {
 
-        document.getElementById("denied").innerHTML = "Mi spiace, prova con un'altra mail.."
+
+           
+        
+        document.getElementById("denied").innerHTML = "Mi spiace, prova con un'altra mail..";
+
 
 
     }
-
 
 
 

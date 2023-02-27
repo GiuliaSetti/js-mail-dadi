@@ -1,3 +1,58 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
 .debug *{
     font-family: 'Montserrat', sans-serif;
 }
+
+.centered{
+    text-align: center;
+    padding: 2rem 0;
+}
+
+.mail_container{
+    width: 800px;
+    margin: 10rem auto;
+    background-color: #778DA9;
+
+    border-radius: 30px;
+
+    box-shadow: 5px 10px 5px rgba(0, 0, 0, 0.322);
+}
+
+.mail_container h1{
+    padding: 4rem;
+    color: #0D1B2A;
+}
+
+.mail_input{
+    font-size: 20px;
+    font-weight: bold;
+
+    color: #E0E1DD;
+}
+
+
+.mail_input input{
+    padding: 10px;
+    border: transparent;
+
+    border-radius: 20px;
+}
+
+#login_button{
+    padding: 10px 15px;
+    border-radius: 20px;
+    border: transparent;
+
+    color: gray;
+    font-weight: bold;
+}
+
+
+
