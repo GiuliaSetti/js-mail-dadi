@@ -30,6 +30,10 @@ al click del bottone:
 let button = document.getElementById("login_button");
 
 
+ 
+let user = document.getElementById("user_mail");
+
+
 // lista accounts
 let accounts = [
 "mariobianchi@gmail.com", 
@@ -44,11 +48,12 @@ let accounts = [
 
 console.log(accounts);
 
+
+
 // al click del bottone
 button.addEventListener("click", function(){
 
-    
-    let user = document.getElementById("user_mail").value;
+   
 
 
     // test email
@@ -80,28 +85,18 @@ button.addEventListener("click", function(){
         document.getElementById("login").innerHTML = "Benvenuto!";
 
 
-    } else if (user == ""){
+    }  else {
 
-
-
-        document.getElementById("insert").innerHTML = "Inserisci una mail!";
-
-
-
-    } else {
-
-
-           
         
-        document.getElementById("denied").innerHTML = "Mi spiace, prova con un'altra mail..";
-
+        
+        document.getElementById("login").innerHTML = "Mi spiace, prova con un'altra mail..";
 
 
     }
 
 
 
-})
+});
 
 
 

@@ -22,6 +22,9 @@
 let button = document.getElementById("play_button");
 
 
+document.getElementById("dice_container").style.display = "none";
+
+
 button.addEventListener("click", function(){
 
     let userShot = Math.floor((Math.random() * 6) + 1);
@@ -39,6 +42,32 @@ button.addEventListener("click", function(){
     
     document.getElementById("cpu_shot_result").innerHTML = computerShot;
 
+
+
+    // aggiunta immagini
+
+    
+    document.getElementById("dice_container").style.display = "block";
+
+
+    let diceImages = [
+        "img/1.png",
+        "img/2.png",
+        "img/3.png",
+        "img/4.png",
+        "img/5.png",
+        "img/6.png",
+    ]
+
+    let diceImgOne = document.getElementById("dado_1");
+
+    let diceImgTwo = document.getElementById("dado_2");
+ 
+    diceImgOne.src = diceImages[userShot-1];
+
+    diceImgTwo.src = diceImages[computerShot - 1];
+
+    ////___
 
     if(userShot > computerShot){
 
